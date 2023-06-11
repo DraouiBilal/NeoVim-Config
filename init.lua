@@ -1,2 +1,1 @@
 require("drale")
-print("Hello")
