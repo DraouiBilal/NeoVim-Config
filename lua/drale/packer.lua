@@ -7,10 +7,10 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.5',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
-    }  
+    }
     use("folke/tokyonight.nvim")
 
     vim.cmd('colorscheme tokyonight-night')
@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
     use("nvim-treesitter/nvim-treesitter-context");
-
+    use("towolf/vim-helm");
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -43,4 +43,6 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+    -- copilot
+    use {'github/copilot.vim', branch = 'release' }
 end)
