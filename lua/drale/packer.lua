@@ -45,5 +45,6 @@ return require('packer').startup(function(use)
     }
     -- copilot
     use {'github/copilot.vim', branch = 'release' }
+    use {'CopilotC-Nvim/CopilotChat.nvim'}
     use("BurntSushi/ripgrep")
 end)
