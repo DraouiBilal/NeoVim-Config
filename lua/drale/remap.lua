@@ -49,3 +49,6 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>d", function()
+    vim.cmd("lua vim.diagnostic.open_float()")
+end)
